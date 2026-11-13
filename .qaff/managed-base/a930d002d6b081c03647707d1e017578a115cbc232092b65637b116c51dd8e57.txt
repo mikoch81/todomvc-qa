@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "SCENARIO-DEMO-SIGNIN-001",
+  "title": "User signs in with valid credentials",
+  "appId": "demo-saas",
+  "layer": "web-desktop",
+  "source": {
+    "type": "human-input",
+    "reference": "USER_SUPPLIED_REFERENCE"
+  },
+  "steps": [
+    {
+      "id": "S1",
+      "action": "Open the sign-in page"
+    },
+    {
+      "id": "S2",
+      "action": "Enter valid credentials"
+    },
+    {
+      "id": "S3",
+      "action": "Submit and observe result"
+    }
+  ],
+  "expectedResults": [
+    {
+      "stepId": "S1",
+      "result": "Sign-in page is visible"
+    },
+    {
+      "stepId": "S2",
+      "result": "Credentials are accepted by client validation"
+    },
+    {
+      "stepId": "S3",
+      "result": "Dashboard marker is visible"
+    }
+  ],
+  "authoringConstraints": [
+    "Do not invent selectors",
+    "Do not call external application targets in smoke tests",
+    "Do not modify generated-owned files"
+  ],
+  "unknowns": []
+}

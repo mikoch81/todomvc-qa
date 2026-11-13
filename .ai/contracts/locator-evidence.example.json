@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "evidenceId": "LOC-EVIDENCE-DEMO-001",
+  "appId": "demo-saas",
+  "pageOrComponent": "signin-form",
+  "source": {
+    "type": "fixture-html",
+    "path": "apps/demo-saas/web-desktop/fixtures/signin.html",
+    "note": "DOM collector automation is future scope"
+  },
+  "elements": [
+    {
+      "name": "email-input",
+      "candidateSelector": "[data-testid='email-input']",
+      "rationale": "Stable test id attribute"
+    },
+    {
+      "name": "submit-button",
+      "candidateSelector": "[data-testid='signin-submit']",
+      "rationale": "Stable test id attribute"
+    }
+  ],
+  "prohibitedSelectors": [
+    ".btn:nth-child(3)",
+    "//div[4]/button[2]"
+  ],
+  "gaps": []
+}

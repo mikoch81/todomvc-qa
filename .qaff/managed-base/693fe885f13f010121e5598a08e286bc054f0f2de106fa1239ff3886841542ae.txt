@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "reviewId": "REVIEW-DEMO-001",
+  "inputs": {
+    "scenarioContractRef": ".ai/contracts/scenario-contract.example.json",
+    "authoringRequestRef": ".ai/contracts/test-authoring-request.template.json",
+    "locatorEvidenceRef": ".ai/contracts/locator-evidence.example.json"
+  },
+  "findings": [
+    {
+      "file": "apps/demo-saas/web-desktop/tests/signin.spec.ts",
+      "category": "minor",
+      "message": "Allure step text should match scenario step naming"
+    }
+  ],
+  "verdict": "changes_requested",
+  "requiredCommands": [
+    "qaff verify --project .",
+    "npm test"
+  ],
+  "assumptions": [],
+  "blockedReasons": []
+}

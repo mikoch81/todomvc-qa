@@ -1,0 +1,36 @@
+# Node
+node_modules/
+
+# TypeScript build output
+dist/
+*.tsbuildinfo
+
+# Playwright
+playwright-report/
+test-results/
+
+# Allure raw results (allure-playwright)
+allure-results/
+
+# Allure HTML report (npm run allure:report)
+allure-report/
+
+# MCP dry-run request files (may hold caller-supplied comment text)
+.ai/mcp/outbox/
+
+# IDE
+.idea/
+*.iml
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# qaff local state (downloaded sample apps, audit log, dry-run request files).
+# .qaff/managed-base/ stays tracked: qaff update merges local edits from it.
+.qaff/*
+!.qaff/managed-base/
+
+# qaff update --apply report
+QAFF_UPDATE_REPORT.md

@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "scenarioId": "SCENARIO-DEMO-SIGNIN-001",
+  "feature": "Authentication",
+  "story": "Valid sign-in",
+  "severity": "CRITICAL",
+  "mappings": [
+    {
+      "scenarioStepId": "S1",
+      "allureStep": "Open sign-in page"
+    },
+    {
+      "scenarioStepId": "S2",
+      "allureStep": "Enter valid credentials"
+    },
+    {
+      "scenarioStepId": "S3",
+      "allureStep": "Submit and verify dashboard"
+    }
+  ],
+  "assertions": [
+    {
+      "scenarioStepId": "S3",
+      "expected": "Dashboard marker is visible"
+    }
+  ]
+}

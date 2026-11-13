@@ -87,8 +87,13 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v5
         with:
+          # Attempt-specific name: "Re-run failed jobs" would otherwise add a second
+          # github-pages artifact to the run and deploy-pages refuses two.
+          name: github-pages-${{ github.run_attempt }}
           path: site
 
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v5
+        with:
+          artifact_name: github-pages-${{ github.run_attempt }}

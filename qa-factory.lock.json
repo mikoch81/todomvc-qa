@@ -288,7 +288,7 @@
       },
       {
         "path": ".github/workflows/playwright.yml",
-        "sha256": "92d57d7a4edd583bbf1309bd44d2c8c991a7d01cf617cc82fb5986646273b8a8"
+        "sha256": "e30d9bddbabaf2b88a6dc4f552b0750ac3c857eb2545ba1f6a4e754be85410c9"
       },
       {
         "path": ".gitignore",
